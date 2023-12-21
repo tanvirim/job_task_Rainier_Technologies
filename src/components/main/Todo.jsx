@@ -68,9 +68,9 @@ const Todo = () => {
           gap={30}
           width='100%'
         >
-          <Flex direction='column' gap={6}>
+          <Flex direction='column' gap={6} justifyContent='start'>
             {todoItems.map((item, index) => (
-              <Flex key={index} align='center' flexDirection='column'>
+              <Flex key={index} flexDirection='column'>
                 <Flex>
                   <Image src={item.icon} alt='Icon' boxSize='24px' mr={2} />
                   <Text>{item.text}</Text>

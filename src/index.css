@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* For iPhone 11 Pro */
+@media (min-width: 375px) and (max-width: 812px) {
+  /* Your custom styles for iPhone 11 Pro */
+}
+
+/* For iPad Pro */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  /* Your custom styles for iPad Pro */
+}
+
+/* For MacBook Pro */
+@media (min-width: 1280px) {
+  /* Your custom styles for MacBook Pro */
+}

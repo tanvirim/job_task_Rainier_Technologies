@@ -20,7 +20,10 @@ const NavBar = ({ toggleLeftBar }) => {
       height={20}
       paddingX={4}
       paddingY={4}
-      bg='linear-gradient(270deg, #FF7C65 0%, #FF7594 100%)'
+      bg={{
+        base: 'linear-gradient(270deg, #FF7C65 0%, #FF7594 100%)',
+        md: 'none',
+      }}
     >
       <HStack justifyContent='space-between'>
         <HStack>

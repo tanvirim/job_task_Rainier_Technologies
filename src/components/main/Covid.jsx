@@ -13,7 +13,6 @@ const Covid = () => {
       alignItems={{ base: 'center', md: 'center', lg: 'center' }}
       justifyContent={{ base: 'center', md: 'center', lg: 'center' }}
       maxW='1000px'
-      marginX={4}
     >
       <Image
         src={covidImage}

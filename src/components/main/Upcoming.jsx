@@ -70,7 +70,7 @@ const Upcoming = () => {
         backgroundColor:
           colorMode === 'light' ? 'rgb(255, 255, 255)' : 'rgba(44, 34, 34,.7)',
       }}
-      className='overflow-y-auto p-2 mx-4 rounded-md'
+      className='overflow-y-auto p-2  rounded-md'
     >
       <h1 className='font-bold text-xl px-2 my-4'>Upcoming Appointment</h1>
 

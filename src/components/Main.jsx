@@ -19,7 +19,7 @@ const Main = () => {
         md: `
           'greeting greeting'
           'vitals vitals'
-          'upcoming todo'
+          'todo upcoming'
           'covid covid'
         `,
         lg: `
@@ -30,6 +30,7 @@ const Main = () => {
       }}
       columnGap={{ base: 4, lg: 40 }}
       rowGap={{ base: 4, lg: 8 }}
+      marginX={{ md: 10 }}
     >
       <GridItem area='greeting'>
         <Greeting />

@@ -35,16 +35,13 @@ const Todo = () => {
   return (
     <Flex
       direction='column'
-      padding={4}
-      marginRight={4}
+      padding={2}
       style={{
         backgroundColor:
           colorMode === 'light' ? 'rgb(255, 255, 255)' : 'rgba(44, 34, 34,.7)',
       }}
     >
-      <Text fontSize='2xl' mb={4}>
-        To-Do List
-      </Text>
+      <Text fontSize='2xl'>To-Do List</Text>
       <VStack spacing={4} w='100%'>
         <Flex align='center' justify='space-between' w='100%'>
           <Textarea height={100} placeholder='Add a todo...' />

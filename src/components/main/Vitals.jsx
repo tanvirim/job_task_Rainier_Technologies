@@ -5,7 +5,7 @@ import bloodIcon from '../../assets/main/vitals/blood.svg';
 import arrowIcon from '../../assets/main/vitals/arrow.svg';
 import whiteArrowIcon from '../../assets/main/vitals/whiteArrow.svg';
 
-import { useColorMode } from '@chakra-ui/react';
+import { useColorMode, Text } from '@chakra-ui/react';
 const Vitals = () => {
   const { colorMode } = useColorMode();
 
@@ -41,8 +41,13 @@ const Vitals = () => {
   ];
 
   return (
-    <div className='mx-4 mt-4'>
-      <h1 className='font-bold text-xl mb-4 ml-2'>Your Vitals</h1>
+    <div className=' mt-4'>
+      <Text
+        display={{ base: 'block', md: 'none' }}
+        className='font-bold text-xl mb-4 ml-2'
+      >
+        Your Vitals
+      </Text>
       <div className='flex flex-wrap justify-around'>
         {medicalMeasurements.map((measurement, index) => (
           <div

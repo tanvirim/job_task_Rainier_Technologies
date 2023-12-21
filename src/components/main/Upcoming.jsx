@@ -28,30 +28,13 @@ const Upcoming = () => {
     {
       year: currentYear,
       month: getMonthName(currentMonth),
-      date: currentDateOfMonth,
-      DrName: 'Dr. John Doe',
-      speciality: 'Cardiology',
-      slot: 'morning',
-      time: '9:00 AM',
-    },
-    {
-      year: currentYear,
-      month: getMonthName(currentMonth),
       date: currentDateOfMonth + 1,
       DrName: 'Dr. Emily Smith',
       speciality: 'Dermatology',
       slot: 'evening',
       time: '4:30 PM',
     },
-    {
-      year: currentYear,
-      month: getMonthName(currentMonth),
-      date: currentDateOfMonth + 2,
-      DrName: 'Dr. Michael Johnson',
-      speciality: 'Orthopedics',
-      slot: 'morning',
-      time: '10:15 AM',
-    },
+
     {
       year: currentYear,
       month: getMonthName(currentMonth),

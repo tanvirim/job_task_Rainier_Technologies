@@ -35,7 +35,7 @@ const Main = () => {
       <GridItem area='vitals'>
         <Vitals />
       </GridItem>
-      <GridItem area='upcoming'>
+      <GridItem area='upcoming' maxWidth='452px'>
         <Upcoming gridArea='upcoming' />
       </GridItem>
       <GridItem area='todo'>

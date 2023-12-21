@@ -1,5 +1,5 @@
 import { Grid, GridItem, Box } from '@chakra-ui/react';
-import Main from './components/Main';
+import Main from './components/main/Main';
 import { useState } from 'react';
 import NavBar from './components/NavBar';
 import LeftSideBar from './components/LeftSideBar';
@@ -17,8 +17,8 @@ function App() {
         templateAreas={`"nav nav"
                      "left main"`}
       >
-        <GridItem area='nav' height={20}>
-          <NavBar toggleLeftBar={toggleLeftBar} showLeftBar={showLeftBar} />
+        <GridItem area='nav'>
+          <NavBar toggleLeftBar={toggleLeftBar} />
         </GridItem>
         <GridItem
           area='left'
@@ -37,7 +37,7 @@ function App() {
           area='main'
           bg='blue'
           position='absolute'
-          top='50px'
+          top='420px'
           height='auto'
           width='100%'
         >

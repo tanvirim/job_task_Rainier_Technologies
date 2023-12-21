@@ -10,16 +10,16 @@ const Main = () => {
     <Grid
       templateAreas={{
         base: `
-          'greeting greeting'
-          'vitals vitals'
-          'upcoming upcoming'
-          'todo todo'
-          'covid covid'
+          'greeting'
+          'vitals'
+          'upcoming'
+          'todo'
+          'covid'
         `,
         md: `
           'greeting greeting'
           'vitals vitals'
-          'todo upcoming'
+          'upcoming todo'
           'covid covid'
         `,
         lg: `
@@ -28,6 +28,8 @@ const Main = () => {
           'todo covid'
         `,
       }}
+      columnGap={{ base: 4, lg: 40 }}
+      rowGap={{ base: 4, lg: 8 }}
     >
       <GridItem area='greeting'>
         <Greeting />

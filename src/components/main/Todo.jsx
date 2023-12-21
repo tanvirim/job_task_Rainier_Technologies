@@ -37,7 +37,7 @@ const Todo = () => {
       </Text>
       <VStack spacing={4} w='100%'>
         <Flex align='center' justify='space-between' w='100%'>
-          <Textarea height={200} placeholder='Add a todo...' />
+          <Textarea height={100} placeholder='Add a todo...' />
           <Box>
             <Image
               marginTop={140}
@@ -75,7 +75,7 @@ const Todo = () => {
                   <Image src={item.icon} alt='Icon' boxSize='24px' mr={2} />
                   <Text>{item.text}</Text>
                 </Flex>
-                <Box className='opacity-30 mr-60'>Last Seen; 10:20 PM</Box>
+                <Box className='opacity-30 mr-40'>Last Seen; 10:20 PM</Box>
               </Flex>
             ))}
           </Flex>

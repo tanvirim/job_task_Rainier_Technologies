@@ -1,0 +1,28 @@
+const medicalMeasurements = [
+  {
+    imageLink: 'imageLink1.jpg',
+    method: 'Pulse Count',
+    measure: '^0 bpm',
+    condition: 'Normal',
+  },
+  {
+    imageLink: 'imageLink2.jpg',
+    method: 'Blood Pressure',
+    measure: '110/70 mmHg',
+    condition: 'Slightly higher',
+  },
+  {
+    imageLink: 'imageLink3.jpg',
+    method: 'Oxygen Saturation',
+    measure: '97%',
+    condition: 'Slightly Higher',
+  },
+  {
+    imageLink: 'imageLink4.jpg',
+    method: 'Glucose Count',
+    measure: '100mm/dl',
+    condition: 'Normal',
+  },
+];
+
+export default medicalMeasurements;

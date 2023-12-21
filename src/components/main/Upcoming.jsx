@@ -81,7 +81,7 @@ const Upcoming = () => {
     },
   ];
   return (
-    <div className='h-[468px] overflow-y-auto p-2 mx-4 rounded-md border-solid border-2 border-zinc-200 '>
+    <div className='overflow-y-auto p-2 mx-4 rounded-md border-solid border-2 border-zinc-200 '>
       <h1 className='font-bold text-xl px-2 my-4'>Upcoming Appointment</h1>
 
       <div className='flex flex-col '>

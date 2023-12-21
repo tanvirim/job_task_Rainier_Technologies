@@ -1,6 +1,7 @@
 import AppointmentCard from './AppointmentCard';
-
+import { useColorMode } from '@chakra-ui/react';
 const Upcoming = () => {
+  const { colorMode } = useColorMode();
   // Get current date and time
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
@@ -64,7 +65,13 @@ const Upcoming = () => {
     },
   ];
   return (
-    <div className='overflow-y-auto p-2 mx-4 rounded-md border-solid border-2 border-zinc-200 '>
+    <div
+      style={{
+        backgroundColor:
+          colorMode === 'light' ? 'rgb(255, 255, 255)' : 'rgba(44, 34, 34,.7)',
+      }}
+      className='overflow-y-auto p-2 mx-4 rounded-md'
+    >
       <h1 className='font-bold text-xl px-2 my-4'>Upcoming Appointment</h1>
 
       <div className='flex flex-col '>

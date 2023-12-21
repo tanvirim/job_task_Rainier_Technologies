@@ -7,6 +7,7 @@ import {
   Button,
   Textarea,
   useColorModeValue,
+  useColorMode,
 } from '@chakra-ui/react';
 import buttonCheck from '../../assets/main/todo/buttonCheck.svg';
 import check from '../../assets/main/todo/check.svg';
@@ -14,6 +15,7 @@ import uncheck from '../../assets/main/todo/uncheck.svg';
 import roundPlus from '../../assets/main/todo/roundPlus.svg';
 
 const Todo = () => {
+  const { colorMode } = useColorMode();
   const textColor = useColorModeValue('white', 'white');
   const todoItems = [
     {
@@ -31,7 +33,15 @@ const Todo = () => {
   ];
 
   return (
-    <Flex direction='column' padding={4}>
+    <Flex
+      direction='column'
+      padding={4}
+      marginRight={4}
+      style={{
+        backgroundColor:
+          colorMode === 'light' ? 'rgb(255, 255, 255)' : 'rgba(44, 34, 34,.7)',
+      }}
+    >
       <Text fontSize='2xl' mb={4}>
         To-Do List
       </Text>

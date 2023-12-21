@@ -52,7 +52,7 @@ const Vitals = () => {
               backgroundColor:
                 colorMode === 'light'
                   ? 'rgb(255, 255, 255)'
-                  : 'rgba(109, 106, 106, 0.6)',
+                  : 'rgba(44, 34, 34,.7)',
             }}
           >
             <div

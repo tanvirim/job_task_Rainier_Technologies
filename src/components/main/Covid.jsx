@@ -1,14 +1,19 @@
-import { Flex, Image, Box, Text } from '@chakra-ui/react';
+import { Flex, Image, Box, Text, useColorMode } from '@chakra-ui/react';
 import covidImage from '../../assets/covid.svg'; // Import your COVID-19 image
 
 const Covid = () => {
+  const { colorMode } = useColorMode();
   return (
     <Flex
+      style={{
+        backgroundColor:
+          colorMode === 'light' ? 'rgb(255, 255, 255)' : 'rgba(44, 34, 34,.7)',
+      }}
       direction={{ base: 'column', md: 'row', lg: 'row' }}
       alignItems={{ base: 'center', md: 'center', lg: 'center' }}
       justifyContent={{ base: 'center', md: 'center', lg: 'center' }}
       maxW='1000px'
-      m='auto'
+      marginX={4}
     >
       <Image
         src={covidImage}

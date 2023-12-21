@@ -42,7 +42,7 @@ const Vitals = () => {
 
   return (
     <div className='mx-4 mt-4'>
-      <h1 className='font-bold text-2xl mb-4'>Your Vitals</h1>
+      <h1 className='font-bold text-xl mb-4 ml-2'>Your Vitals</h1>
       <div className='flex flex-wrap justify-around'>
         {medicalMeasurements.map((measurement, index) => (
           <div

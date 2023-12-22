@@ -28,8 +28,8 @@ const Main = () => {
           'todo covid'
         `,
       }}
-      columnGap={{ base: 4, lg: 40 }}
-      rowGap={{ base: 4, lg: 8 }}
+      columnGap={{ base: 0, lg: 40 }}
+      rowGap={{ base: 0, lg: 0 }}
       marginX={{ md: 10 }}
     >
       <GridItem area='greeting'>

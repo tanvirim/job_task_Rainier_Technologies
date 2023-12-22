@@ -33,7 +33,7 @@ const LeftSideBar = ({ toggleLeftBar, colorMode }) => {
             display={{ md: 'none' }}
             className='bg-red-600 w-[150px] h-[50px] rounded-[5px] cursor-pointer'
           >
-            <Text color={textColor} className='text-center'>
+            <Text color={textColor} className='text-center pt-3'>
               {' '}
               New Appointment
             </Text>

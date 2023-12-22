@@ -13,14 +13,14 @@ const Greeting = () => {
   const textColor = useColorModeValue('white');
   return (
     <Box
-      padding={4}
+      padding={8}
       bg='linear-gradient(270deg, #FF7C65 0%, #FF7594 100%)'
-      rounded={10}
+      rounded={{ base: 0, md: '20px' }}
     >
       <Flex
         flexDirection={{ base: 'column', md: 'row' }}
-        gap={4}
-        justifyContent='center'
+        gap={{ base: '5px', md: '30px' }}
+        justifyContent={{ base: 'center', md: 'left' }}
         align='center'
       >
         <Image src={NavImage} paddingLeft={10} />

@@ -25,12 +25,12 @@ const AppointmentCard = ({ appointment }) => {
           <Text className='font-semibold text-xl'>{appointment.DrName}</Text>
           <Text>{appointment.speciality}</Text>
         </div>
-        <Box bg='white' className='flex' rounded={4}>
-          <Text color={textColor} padding={1}>
+        <Box className='flex gap-4' rounded={4}>
+          <Text bg='white' rounded={4} color={textColor} padding={1}>
             <span className='text-slate-600 mr-2'>Slot</span>
             {appointment.slot}
           </Text>
-          <Text color={textColor} bg='white' padding={1}>
+          <Text color={textColor} rounded={4} bg='white' padding={1}>
             <span className='text-slate-600 mr-2'>Time</span>
             {appointment.time}
           </Text>

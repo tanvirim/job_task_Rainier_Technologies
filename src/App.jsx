@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <Box position='relative'>
+    <Box position='relative' height='150vh'>
       <Grid
         templateAreas={`"nav nav"
                      "left main"`}

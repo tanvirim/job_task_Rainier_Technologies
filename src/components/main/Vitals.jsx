@@ -5,7 +5,7 @@ import bloodIcon from '../../assets/main/vitals/blood.svg';
 import arrowIcon from '../../assets/main/vitals/arrow.svg';
 import whiteArrowIcon from '../../assets/main/vitals/whiteArrow.svg';
 
-import { useColorMode, Text } from '@chakra-ui/react';
+import { useColorMode, Text, Box } from '@chakra-ui/react';
 const Vitals = () => {
   const { colorMode } = useColorMode();
 
@@ -41,7 +41,7 @@ const Vitals = () => {
   ];
 
   return (
-    <div className=' mt-4'>
+    <Box className=' mt-4' marginBottom={{ base: 0, md: '100px' }}>
       <Text
         display={{ base: 'block', md: 'none' }}
         className='font-bold text-xl mb-4 ml-2'
@@ -90,7 +90,7 @@ const Vitals = () => {
           </div>
         ))}
       </div>
-    </div>
+    </Box>
   );
 };
 

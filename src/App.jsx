@@ -1,5 +1,5 @@
-import { Grid, GridItem, Box } from '@chakra-ui/react';
-import { useColorMode } from '@chakra-ui/react';
+import { Grid, GridItem, Box, useColorMode } from '@chakra-ui/react';
+
 import { useState } from 'react';
 import NavBar from './components/NavBar';
 import LeftSideBar from './components/LeftSideBar';
@@ -19,7 +19,7 @@ function App() {
         templateAreas={`"nav nav"
                      "left main"`}
       >
-        <GridItem area='nav'>
+        <GridItem area='nav' zIndex={{ base: 1, md: 30 }}>
           <NavBar toggleLeftBar={toggleLeftBar} />
         </GridItem>
 
@@ -28,8 +28,8 @@ function App() {
           zIndex={10}
           position='absolute'
           height='100vh'
-          width='264px'
-          left={showLeftBar ? '0' : '-400px'}
+          width={{ base: '264px', md: '75px' }}
+          left={{ base: showLeftBar ? '0' : '-400px', md: 0 }}
           top='0'
           transition='left 0.3s ease-out'
         >
@@ -42,6 +42,7 @@ function App() {
           top='80px'
           height='auto'
           width='100%'
+          left={{ md: '40px', lg: '100px' }}
         >
           <Main />
         </GridItem>

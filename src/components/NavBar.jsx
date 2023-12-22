@@ -15,6 +15,7 @@ import ColorMOdeSwitch from './ColorModeSwitch';
 
 const NavBar = ({ toggleLeftBar }) => {
   const textColor = useColorModeValue('white');
+  const changeColor = useColorModeValue('black', 'white');
   return (
     <Box
       height={20}
@@ -30,12 +31,18 @@ const NavBar = ({ toggleLeftBar }) => {
           <Image
             padding={1}
             rounded='md'
-            bg='white'
+            bg={{ base: 'white', md: 'none' }}
             onClick={toggleLeftBar}
             cursor='pointer'
             src={Menu}
           />
-          <Text color={textColor} fontWeight={600}>
+          <Text
+            marginLeft={{ md: '85px' }}
+            marginTop={{ md: '20px' }}
+            fontSize={{ base: 'md', md: '2xl' }}
+            color={{ base: textColor, md: changeColor }}
+            fontWeight={600}
+          >
             {' '}
             Home
           </Text>

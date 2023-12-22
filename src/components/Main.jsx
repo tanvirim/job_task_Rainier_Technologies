@@ -28,7 +28,7 @@ const Main = () => {
           'todo covid'
         `,
       }}
-      columnGap={{ base: 0, lg: 40 }}
+      columnGap={{ base: 0, lg: 30 }}
       rowGap={{ base: 0, lg: 0 }}
       marginX={{ md: 10 }}
     >

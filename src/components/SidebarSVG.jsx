@@ -1,9 +1,14 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
-
+import { Box } from '@chakra-ui/react';
 const SidebarSVG = ({ colorMode }) => {
   return (
-    <div className='flex flex-col gap-6 ml-12'>
+    <Box
+      gap={{ md: '40px' }}
+      className='flex flex-col gap-6 ml-12'
+      marginLeft={{ md: '20px' }}
+      marginTop={{ md: '160px' }}
+    >
       <div className='flex gap-4'>
         <svg
           width='36'
@@ -21,7 +26,9 @@ const SidebarSVG = ({ colorMode }) => {
           </g>
         </svg>
 
-        <div className='mt-2'>Home</div>
+        <Box display={{ md: 'none' }} className='mt-2'>
+          Home
+        </Box>
       </div>
 
       <div className='flex gap-4'>
@@ -50,7 +57,9 @@ const SidebarSVG = ({ colorMode }) => {
           </g>
         </svg>
 
-        <div className='mt-2'>Patient Profile</div>
+        <Box display={{ md: 'none' }} className='mt-2'>
+          Patient Profile
+        </Box>
       </div>
 
       <div className='flex gap-4'>
@@ -129,7 +138,9 @@ const SidebarSVG = ({ colorMode }) => {
           </g>
         </svg>
 
-        <div className='mt-2'>Appointments </div>
+        <Box display={{ md: 'none' }} className='mt-2'>
+          Appointments{' '}
+        </Box>
       </div>
 
       <div className='flex gap-4 '>
@@ -149,7 +160,9 @@ const SidebarSVG = ({ colorMode }) => {
           </g>
         </svg>
 
-        <div className='mt-2'>Medical History</div>
+        <Box display={{ md: 'none' }} className='mt-2'>
+          Medical History
+        </Box>
       </div>
 
       <div className='flex gap-4 '>
@@ -175,9 +188,11 @@ const SidebarSVG = ({ colorMode }) => {
           </g>
         </svg>
 
-        <div className='mt-2'>Settings</div>
+        <Box display={{ md: 'none' }} className='mt-2'>
+          Settings
+        </Box>
       </div>
-    </div>
+    </Box>
   );
 };
 

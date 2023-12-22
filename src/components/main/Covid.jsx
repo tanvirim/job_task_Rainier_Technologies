@@ -20,6 +20,7 @@ const Covid = () => {
       }}
       padding={4}
       maxWidth='661px'
+      marginTop={{ base: 0, md: '40px' }}
     >
       {/* title start */}
       <Flex

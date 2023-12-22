@@ -19,7 +19,7 @@ const Covid = () => {
           colorMode === 'light' ? 'rgb(255, 255, 255)' : 'rgba(44, 34, 34,.7)',
       }}
       padding={4}
-      maxWidth='661px'
+      maxWidth={{ base: '661px', md: '661px', lg: '1020px' }}
       marginTop={{ base: 0, md: '40px' }}
     >
       {/* title start */}

@@ -6,7 +6,7 @@ import {
   useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react';
-import covidImage from '../../assets/covid.svg'; // Import your COVID-19 image
+import covidImage from '../../assets/covid.svg';
 
 const Covid = () => {
   const { colorMode } = useColorMode();
@@ -19,7 +19,7 @@ const Covid = () => {
           colorMode === 'light' ? 'rgb(255, 255, 255)' : 'rgba(44, 34, 34,.7)',
       }}
       padding={4}
-      maxWidth={{ base: '661px', md: '661px', lg: '1020px' }}
+      maxWidth={{ base: '660px', md: '1020px', lg: '660px' }}
       marginTop={{ base: 0, md: '40px' }}
     >
       {/* title start */}
